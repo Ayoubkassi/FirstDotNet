@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "By3OH3IiFYNRULsM8NaQ8M/FgYMwvvc0EPtokWz7uO6SN6sf9Hd75nZiCRTY6nkrjLB1nTaZuP9CLVkDfgQ0kg==",
+  "success": true,
+  "projectFilePath": "/home/ryota/Desktop/Commander/Commander.csproj",
+  "expectedPackageFiles": [
+    "/home/ryota/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/ryota/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/ryota/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/home/ryota/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/home/ryota/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/home/ryota/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
