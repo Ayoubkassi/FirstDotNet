@@ -198,11 +198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ryota/Desktop/Commander/Commander.csproj",
+      "projectUniqueName": "/home/ryota/Desktop/FirstDotNet/Commander.csproj",
       "projectName": "Commander",
-      "projectPath": "/home/ryota/Desktop/Commander/Commander.csproj",
+      "projectPath": "/home/ryota/Desktop/FirstDotNet/Commander.csproj",
       "packagesPath": "/home/ryota/.nuget/packages/",
-      "outputPath": "/home/ryota/Desktop/Commander/obj/",
+      "outputPath": "/home/ryota/Desktop/FirstDotNet/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/ryota/.nuget/NuGet/NuGet.Config"
