@@ -29,3 +29,9 @@ to watch changes u must connect in SqlServer as SA user and run :
 >go
 
 and then u will see the name of database in our case (Catalog)
+
+>dotnet ef migrations remove
+
+change data in Model file , to be changed after in migration
+
+>dotnet ef migrations add InitialMigration
