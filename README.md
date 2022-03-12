@@ -35,3 +35,7 @@ and then u will see the name of database in our case (Catalog)
 change data in Model file , to be changed after in migration
 
 >dotnet ef migrations add InitialMigration
+
+then to update database
+
+>dotnet ed database update

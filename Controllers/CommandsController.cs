@@ -12,7 +12,7 @@ namespace Commander.Controllers
   public class CommandsController : ControllerBase
   {
     private readonly ICommanderRepo _repository;
-    
+
     public CommandsController(ICommanderRepo repository)
     {
       _repository = repository;
@@ -23,7 +23,7 @@ namespace Commander.Controllers
     [HttpGet]
     public ActionResult <IEnumerable<Command>> GetAllCommands()
     {
-      var commandItems = _repository.GetAppCommands();
+      var commandItems = _repository.GetAllCommands();
 
       return Ok(commandItems);
     }
