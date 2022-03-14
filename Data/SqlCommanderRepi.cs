@@ -23,6 +23,13 @@ namespace Commander.Data
         return(_context.SaveChanges() >= 0);
       }
 
+      //Update Command
+      public void UpdateCommand(Command cmd)
+      {
+        throw new System.NotImplementedException();
+      }
+
+
       public SqlCommanderRepo(CommanderContext context)
       {
         _context = context;
