@@ -29,6 +29,16 @@ namespace Commander.Data
         throw new System.NotImplementedException();
       }
 
+      //Delete Command
+      public void UpdateCommand(Command cmd)
+      {
+        if(cmd == null)
+        {
+          throw new ArgumentNullException(nameof(cmd));
+        }
+
+        _context.Commands.Remove(cmd);
+      }
 
       public SqlCommanderRepo(CommanderContext context)
       {
