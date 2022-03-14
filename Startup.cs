@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 
 namespace Commander
@@ -34,7 +35,9 @@ namespace Commander
             (Configuration.GetConnectionString("CommanderConnection")));
 
             services.AddControllers();
-            services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+            //services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+            services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Commander", Version = "v1" });

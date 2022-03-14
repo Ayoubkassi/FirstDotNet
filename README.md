@@ -7,7 +7,7 @@ Create First Web App Using Dot Net Technologie
 
 **To run the Server**
 
->dotnet run --urls=http://localhost:6000
+>d
 
 ### install dependencies
 
