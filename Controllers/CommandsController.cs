@@ -58,24 +58,23 @@ namespace Commander.Controllers
       //return Ok(commandModel);
     }
 
-    //PUT /api/v1/commands/{id}
-    [HttpPut("{id}")]
-    public ActionResult UpdateCommand(int id, CommandUpdateDto commandUpdateDto)
-    {
-      var commandModelFromRepo = _repository.GetCommandById(id);
-      if(commandModelFromRepo == null)
-      {
-        return NotFound();
-      }
+    //PUT api/v1/commands/{id}
+        [HttpPut("{id}")]
+        public ActionResult UpdateCommand(int id, CommandUpdateDto commandUpdateDto)
+        {
+            var commandModelFromRepo = _repository.GetCommandById(id);
+            if(commandModelFromRepo == null)
+            {
+                return NotFound();
+            }
+            _mapper.Map(commandUpdateDto, commandModelFromRepo);
 
-      _mapper.Map(CommandUpdateDto , commandModelFromRepo);
+            _repository.UpdateCommand(commandModelFromRepo);
 
-      _repository.UpdateCommand(commandModelFromRepo);
+            _repository.SaveChanges();
 
-      _repository.SaveChanges();
-
-      return NoContent();
-    }
+            return NoContent();
+        }
 
     //Delete /api/commands/{id}
     [HttpDelete("{id}")]
@@ -92,7 +91,7 @@ namespace Commander.Controllers
       _repository.SaveChanges();
 
       return NoContent();
-      
+
     }
 
   }

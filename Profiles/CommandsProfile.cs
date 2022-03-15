@@ -2,18 +2,18 @@ using AutoMapper;
 using Commander.Dtos;
 using Commander.Models;
 
-namespace Commander.Profiles;
-
+namespace Commander.Profiles
 {
-  public class CommandsProfile : Profile
-  {
-    public CommandsProfile()
+    public class CommandsProfile : Profile
     {
-      // Source -> Target
-      CreateMap<Command, CommandReadDto>();
-      CreateMap<CommandCreateDto , Command>();
-      CreateMap<CommandUpdateDto , Command>();
-      
+        public CommandsProfile()
+        {
+            //Source -> Target
+            CreateMap<Command, CommandReadDto>();
+            CreateMap<CommandCreateDto, Command>();
+            CreateMap<CommandUpdateDto, Command>();
+        }
+
     }
-  }
+
 }

@@ -30,7 +30,7 @@ namespace Commander.Data
       }
 
       //Delete Command
-      public void UpdateCommand(Command cmd)
+      public void DeleteCommand(Command cmd)
       {
         if(cmd == null)
         {
